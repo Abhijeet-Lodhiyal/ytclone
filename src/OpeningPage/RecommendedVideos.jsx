@@ -2,7 +2,7 @@ import VideoCard from "./VideoCard";
 import { Link } from "react-router-dom";
 function RecommendedVideos() {
     return <>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden"> 
             <div className="w-full overflow-auto flex md:p-2 mb-2 md:ml-10">
                 <button className="rounded-md pb-1 pt-1   bg-black text-white pl-4 pr-4 mr-2">All</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Music</button>
