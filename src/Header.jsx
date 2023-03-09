@@ -56,7 +56,6 @@ function Header() {
                             <button className=''><BiSearch size={20} /></button>
                         </Link> : <Link to="/search/"><button><BiSearch size={20} /></button>  </Link>
                     }
-
                 </form>
                 <button><BsFillMicFill size={20} /></button>
             </div>

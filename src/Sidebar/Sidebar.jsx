@@ -11,7 +11,7 @@ function Sidebar()
 {
     const location = useLocation();
     return <>
-        <div className="p-2 sm:block hidden shrink-0 basis-1/6 overflow-auto sticky top-20 h-[90%]">
+        <div className="p-2 basis-1/6 sm:block hidden overflow-auto h-[90%] top-20 sticky ">
             <Link to="/"><SidebarRow selected={location.pathname === '/'} title="Home" Icon={MdHomeFilled}/></Link>
             <Link to='/shorts'><SidebarRow title="Shorts" selected={location.pathname === '/shorts'} Icon={TiMediaPlayOutline}/></Link>
             <SidebarRow title="Subscriptions" Icon={MdSubscriptions}/>

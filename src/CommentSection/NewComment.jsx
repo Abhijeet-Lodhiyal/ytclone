@@ -1,5 +1,4 @@
 import alo from '../assets/alo.jpg'
-import { FiThumbsUp, FiThumbsDown } from 'react-icons/fi'
 import ThumbsDown from '../ThumbsDown';
 import ThumbsUp from '../ThumbsUp';
 function NewComment(props)
