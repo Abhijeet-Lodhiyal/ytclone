@@ -7,7 +7,7 @@ function RecommendedVideos() {
                 <button className="rounded-md pb-1 pt-1   bg-black text-white pl-4 pr-4 mr-2">All</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Music</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Podcasts</button>
-                <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Gaing</button>
+                <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Gaming</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Computer Science</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Physics</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Comedy</button>

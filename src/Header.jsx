@@ -5,7 +5,6 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineNotificationsNone, } from 'react-icons/md'
 import { BiDotsVerticalRounded, BiSearch } from 'react-icons/bi'
 import alo from './assets/alo.jpg'
-import SidebarRow from './Sidebar/SidebarRow'
 import { MdHomeFilled, MdSubscriptions, MdVideoLibrary, MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import { RiHistoryFill } from 'react-icons/ri'
 import { TiMediaPlayOutline } from 'react-icons/ti'
@@ -17,6 +16,10 @@ import OffCanvas from './OffCanvas'
 function Header() {
     const [inputVal, setinputVal] = useState("");
     const [sideBar, setSideBar] = useState(0);
+    function handleSubmit(e) {
+        console.log("ok")
+            window.location.href = '/search/'+inputVal
+    }
     return (<>
         <div className='flex flex-row items-center justify-between p-4 sticky top-0 z-10 bg-white'>
             <div className='flex flex-row items-center space-x-4'>
@@ -47,15 +50,14 @@ function Header() {
      
             </div>
             <div className='flex flex-row items-center space-x-4 w-[40%] justify-center'>
-                <div className='flex flex-row sm:border-gray-300 sm:border-2 p-2 rounded-3xl items-center w-[80%]'>
+                <form className='flex flex-row sm:border-gray-300 sm:border-2 p-2 rounded-3xl items-center w-[80%]' onSubmit={handleSubmit}>
                     <input type="search" value={inputVal} onChange={(e) => { setinputVal(e.target.value) }} placeholder="Search" className='sm:visible invisible focus:outline-none ml-4 w-[90%]'></input>
                     {
-                        (inputVal) !== '' ? <Link to={`/search/ ${inputVal}`}>
-                            <button><BiSearch size={20} /></button>
+                        (inputVal) !== '' ? <Link to={`/search/ ${inputVal}`} className='flex items-center justify-center'>
+                            <button className=''><BiSearch size={20} /></button>
                         </Link> : <Link to="/search/"><button><BiSearch size={20} /></button>  </Link>
                     }
-
-                </div>
+                </form>
                 <button><BsFillMicFill size={20} /></button>
             </div>
             <div className='flex flex-row items-center space-x-4'>

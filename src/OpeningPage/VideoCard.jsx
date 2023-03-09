@@ -1,7 +1,7 @@
 import HoverVideoPlayer from 'react-hover-video-player';
 function VideoCard({ image, views, channel, cicon, time, thumbnail ,vid}) {
     return <>
-        <div className='md:m-2 md:w-[320px] w-[100%] flex flex-col md:ml-2 group/main hover:cursor-pointer hover:scale-[1.2] delay-75 md:hover:bg-[#f0f0f0] rounded-xl hover:z-10  h-fit'>
+        <div className='md:m-2 md:w-[320px] w-[100%] flex flex-col md:ml-2 group/main hover:cursor-pointer hover:scale-[1.2] delay-500   md:hover:bg-[#f0f0f0] rounded-xl hover:z-10  h-fit'>
             <HoverVideoPlayer
                 videoSrc={vid} 
                 pausedOverlay={
