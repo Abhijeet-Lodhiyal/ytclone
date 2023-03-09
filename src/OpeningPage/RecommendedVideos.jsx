@@ -2,8 +2,8 @@ import VideoCard from "./VideoCard";
 import { Link } from "react-router-dom";
 function RecommendedVideos() {
     return <>
-        <div className="w-full bg-[#f9f9f9] md:pl-8 md:pt-4 flex-wrap">
-            <div className="flex flex-row overflow-scroll mb-4 md:overflow-hidden">
+        <div className="overflow-hidden">
+            <div className="w-full overflow-auto flex md:p-2 mb-2 md:ml-10">
                 <button className="rounded-md pb-1 pt-1   bg-black text-white pl-4 pr-4 mr-2">All</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Music</button>
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Podcasts</button>
@@ -18,8 +18,8 @@ function RecommendedVideos() {
                 <button className="rounded-md pb-1 pt-1 hover:bg-stone-300 bg-stone-200 pl-4 pr-4 mr-2">Pop Music</button>
 
             </div>
-            <div className="flex flex-row flex-wrap md:justify-start justify-center">
-                <Link to="/watch" className="flex flex-row flex-wrap">
+            <div className="flex flex-row flex-wrap justify-center">
+                <Link to="/watch" className="flex flex-row flex-wrap justify-center">
                     <VideoCard image='https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg' thumbnail="All of me ~ John Legend (cover song)" cicon="https://cdn.pixabay.com/photo/2017/11/12/08/43/audio-2941753_960_720.jpg" views="2M" time="1 month ago" channel="Arhat Sings" vid='video.mp4' />
               
                     <VideoCard image='https://cdn.pixabay.com/photo/2016/11/06/05/36/lake-1802337_960_720.jpg' thumbnail="Epic Sunrise" views="42M" time="3 years ago" cicon="https://cdn.pixabay.com/photo/2018/07/12/11/45/sunrise-3533173_960_720.jpg" channel="Nature Love" vid='/Sunrise.mp4' />

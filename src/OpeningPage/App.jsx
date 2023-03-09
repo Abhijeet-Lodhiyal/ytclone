@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className='flex'>
+      <div className=' flex relative'>
         <Sidebar />
         <RecommendedVideos />
       </div>

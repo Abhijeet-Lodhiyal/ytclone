@@ -17,11 +17,10 @@ function Header() {
     const [inputVal, setinputVal] = useState("");
     const [sideBar, setSideBar] = useState(0);
     function handleSubmit(e) {
-        console.log("ok")
             window.location.href = '/search/'+inputVal
     }
     return (<>
-        <div className='flex flex-row items-center justify-between p-4 sticky top-0 z-10 bg-white'>
+        <div className='flex flex-row items-center justify-between pt-4 pb-4 sticky top-0 z-10 bg-white'>
             <div className='flex flex-row items-center space-x-4'>
                 <button onClick={(e) => {setSideBar(1)}}><GiHamburgerMenu size={20} /></button>
                 <Link to="/">
@@ -57,6 +56,7 @@ function Header() {
                             <button className=''><BiSearch size={20} /></button>
                         </Link> : <Link to="/search/"><button><BiSearch size={20} /></button>  </Link>
                     }
+
                 </form>
                 <button><BsFillMicFill size={20} /></button>
             </div>
