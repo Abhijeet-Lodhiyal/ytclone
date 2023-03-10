@@ -1,0 +1,7 @@
+.icon-s:hover > .icon-show{
+    color:red;
+}
+
+.icon-s.selected > .icon-show{
+    color:red;
+}
